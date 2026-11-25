@@ -15,7 +15,8 @@ Backend API: http://localhost:8080/api
 Compte administrateur de developpement cree seulement si aucun admin n'existe:
 
 - Email: `admin@ao.local`
-- Mot de passe: `Admin123!`
+- Mot de passe: valeur de `APP_DEV_ADMIN_PASSWORD` definie dans votre fichier `.env` (copie de `.env.example`).
+  Choisissez un mot de passe fort : il n'est jamais publie dans le depot.
 
 Les valeurs peuvent etre surchargees par variables d'environnement:
 
