@@ -251,7 +251,10 @@ Toutes les valeurs se règlent dans `.env` (voir `.env.example`) :
 - **Secrets hors du code**, dans des variables d'environnement. En production, l'application **refuse de démarrer** si un secret est absent, trop court ou trop faible.
 - **Journal d'audit** des actions et des connexions.
 
-Plus de détails : [`SECURITY_HARDENING_REPORT.md`](SECURITY_HARDENING_REPORT.md) et [`SECURITY_PRODUCTION_CHECKLIST.md`](SECURITY_PRODUCTION_CHECKLIST.md).
+Limites connues, à traiter avant une mise en production :
+- double authentification (MFA) pour les administrateurs ;
+- terminaison HTTPS/TLS à configurer sur le reverse proxy du serveur ;
+- OCR des PDF scannés.
 
 ---
 
