@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:ao_test;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    username: sa
+    password: test-password
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+app:
+  version:
+    environment: TEST
+  jwt:
+    secret: test-secret-for-jwt-that-is-long-enough-for-hmac-sha
+    expiration-ms: 86400000
+  upload-dir: ${java.io.tmpdir}/ao-test-uploads
+  dev-admin:
+    email: admin@ao.local
+    password: TestAdmin123!
+  auth:
+    login-rate-limit: 1000
+    login-rate-window-seconds: 60

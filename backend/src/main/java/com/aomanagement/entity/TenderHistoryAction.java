@@ -1,0 +1,19 @@
+package com.aomanagement.entity;
+
+public enum TenderHistoryAction {
+    CREATED,
+    UPDATED,
+    ASSIGNED,
+    REASSIGNED,
+    STATUS_CHANGED,
+    RESULT_CHANGED,
+    DOCUMENT_ADDED,
+    DOCUMENT_DELETED,
+    TASK_CREATED,
+    TASK_ASSIGNED,
+    TASK_REASSIGNED,
+    TASK_STATUS_CHANGED,
+    TASK_UPDATED,
+    TASK_DELETED,
+    DELETED
+}

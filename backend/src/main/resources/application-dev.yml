@@ -1,0 +1,7 @@
+app:
+  version:
+    environment: DEV
+
+logging:
+  level:
+    com.aomanagement: DEBUG

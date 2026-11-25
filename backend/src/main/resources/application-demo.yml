@@ -1,0 +1,8 @@
+app:
+  version:
+    environment: DEMO
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate

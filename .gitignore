@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+
+backups/
+presentation-backups/
+uploads/
+logs/
+*.dump
+*.sql
+# Les migrations Flyway doivent etre versionnees
+!backend/src/main/resources/db/**/*.sql
+
+frontend/node_modules/
+frontend/dist/
+backend/target/
+
+.idea/
+.vscode/
+.DS_Store

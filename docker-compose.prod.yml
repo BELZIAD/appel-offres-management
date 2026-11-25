@@ -1,0 +1,11 @@
+services:
+  backend:
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      APP_COOKIE_SECURE: "true"
+      SECURITY_HSTS_ENABLED: "true"
+      SPRINGDOC_ENABLED: "false"
+
+  frontend:
+    ports:
+      - "${FRONTEND_PORT:-80}:80"
